@@ -114,28 +114,27 @@ API in a way that is not compatible with how it was used in 2.6.
       * `UIWidget.padding_bottom`
       * `UIWidget.padding_left`
     * Update and add example code.
-    * Iterable (providing direct children)
+    * `UIWidget` is now iterable, which provides direct access to children
+    * Further performance improvements
 
   * New widgets:
-
-    * `arcade.gui.widgets.dropdown.UIDropdown`
-    * `arcade.gui.widgets.image.UIImage`
-    * `arcade.gui.widgets.slider.UISlider`
-    * `arcade.gui.widgets.constructs.UIButtonRow`
-      ([PR1580](https://github.com/pythonarcade/arcade/pull/1580))
+    * `~arcade.gui.widgets.dropdown.UIDropdown`
+    * `~arcade.gui.widgets.image.UIImage`
+    * `~arcade.gui.widgets.slider.UISlider`
+    * `~arcade.gui.widgets.constructs.UIButtonRow` (`PR1580 <https://github.com/pythonarcade/arcade/pull/1580>`_ and `PR1253 <https://github.com/pythonarcade/arcade/pull/1253>`_)
 
   * `arcade.gui.UIInteractiveWidget` only reacts to left mouse button events
 
-  * Arcade `arcade.gui.property.Property`:
+  * Arcade `~arcade.gui.property.Property`:
 
     * Properties are observable attributes (supported: primitive, list and dict).
-      Listener can be bound with `arcade.gui.property.bind`
+      Listener can be bound with `~arcade.gui.property.bind`
 
   * All `arcade.gui.UILayout`s support `size_hint`, `size_hint_min`, `size_hint_max`.
 
-    * `arcade.gui.UIBoxLayout`
-    * `arcade.gui.UIAnchorLayout`
-    * `arcade.gui.UIGridLayout` [PR1478](https://github.com/pythonarcade/arcade/pull/1478)
+    * `~arcade.gui.UIBoxLayout` - horizontal and vertical layout
+    * `~arcade.gui.UIAnchorLayout` - layout with anchor points
+    * `~arcade.gui.UIGridLayout` (`PR1478 <https://github.com/pythonarcade/arcade/pull/1478>`_) - grid layout
 
   * Replaces deprecated usage of `arcade.draw_text`
 
