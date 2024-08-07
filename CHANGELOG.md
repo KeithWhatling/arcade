@@ -57,6 +57,14 @@ API in a way that is not compatible with how it was used in 2.6.
   * Removed `arcade.gui.widgets.UIPadding` this is now general available in `arcade.gui.widgets.UIWidget`
   * Removed `arcade.gui.widgets.UITexturePane` this is now general available in `arcade.gui.widgets.UIWidget`
   * Removed `arcade.gui.widgets.UIAnchorWidget` replaced by `arcade.gui.widgets.UIAnchorLayout`
+* Sections
+  * SectionManager was uncoupled from Window and View. The `arcade.View` class no longer has a
+    `section_manager` attribute. Instead, the `arcade.SectionManager`has to be created and enabled manually. 
+    This change was made to allow for more flexibility in the future.
+  * `arcade.SectionManager.on_show_view` and `arcade.SectionManager.on_hide_view` have been removed.
+  * `arcade.Section.draw_order` have to be set when added to the `arcade.SectionManager`. It can not be changed later.
+  
+  
 
 ### Featured Updates
 
